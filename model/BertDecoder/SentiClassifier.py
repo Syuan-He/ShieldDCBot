@@ -5,7 +5,6 @@ from torch import nn, Tensor
 from einops import repeat
 from transformers.modeling_outputs import BaseModelOutput
 
-from utils.const import BlockType
 from utils.AttnBlocksConf import AttnBlocksConf
 from utils.DevConf import DevConf
 from module.blocks.CACBlocks import CACBlocks

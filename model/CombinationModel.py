@@ -6,7 +6,6 @@ from transformers import DistilBertModel, BatchEncoding
 
 from utils.DevConf import DevConf
 from utils.AttnBlocksConf import AttnBlocksConf
-from utils.const import BlockType
 from model.BertDecoder.SentiClassifier import SentiClassifier
 
 class CombinationModel(nn.Module):
