@@ -1,4 +1,5 @@
 discord.py
-transformers
-torch
 einops
+python-dotenv
+torch
+transformers
