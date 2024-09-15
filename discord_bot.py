@@ -1,6 +1,7 @@
 import os
 import asyncio
 
+import dotenv
 import discord
 from discord.ext import commands
 
@@ -48,6 +49,7 @@ async def load_extensions():
             await bot.load_extension(f"cogs.{filename[:-3]}")
 
 async def main():
+    dotenv.load_dotenv()
     async with bot:
         await load_extensions()
         await bot.start(os.getenv("DISCORD_TOKEN"))
