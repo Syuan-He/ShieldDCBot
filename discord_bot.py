@@ -14,7 +14,7 @@ async def on_ready():
     slash = await bot.tree.sync()
     print(f"目前登入身份 --> {bot.user}")
     print(f"載入 {len(slash)} 個斜線指令")
-    await bot.change_presence(activity=discord.Game(name="阿巴阿巴"))
+    # await bot.change_presence(activity=discord.Game(name="阿巴阿巴"))
 
 @bot.command()
 async def synccommand(ctx: commands.Context):
